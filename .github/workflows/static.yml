@@ -19,7 +19,7 @@ jobs:
           DEPLOY_DOMAIN="central-asia.awscommunity.day.s3-website-us-east-1.amazonaws.com"
           [[ $GITHUB_REF == "refs/heads/main" ]] || { echo "Invalid branch for deployment"; exit 1; }
           echo "DEPLOY_DOMAIN=$DEPLOY_DOMAIN" >> $GITHUB_ENV
-git 
+
       - name: Deploy
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
