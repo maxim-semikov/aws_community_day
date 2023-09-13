@@ -218,6 +218,14 @@ img {
   gap: 40px;
 }
 
+.speaker-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 60px;
+}
+
 .speaker {
   display: flex;
   flex-direction: column;
