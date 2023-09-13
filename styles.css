@@ -129,8 +129,9 @@ img {
 }
 
 .info-description {
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-align: center;
+  margin: 20px 0;
 }
 
 .cloud {
