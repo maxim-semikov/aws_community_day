@@ -18,7 +18,7 @@ img {
 body {
   margin: 0;
   padding: 0;
-  font-family: "JetBrains Mono", Tahoma, sans-serif;
+  font-family: Tahoma, sans-serif;
   box-sizing: border-box;
   color: white;
   background-color: var(--dark-bg-color);
@@ -135,14 +135,15 @@ img {
 }
 
 .cloud {
-  background-image: url("./assets/img/cloude_bg.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 60px;
+  width: 100%;
+  background-image: url("./assets/img/cloud.svg");
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: contain;
   position: absolute;
-  height: 120px;
   bottom: -1px;
   left: 0;
-  right: 0;
 }
 
 .btn {
@@ -177,7 +178,7 @@ img {
 }
 
 .section_light {
-  background-color: var(--light-bg-color);
+  background-color: white;
   color: #232f3e;
 }
 
@@ -207,7 +208,7 @@ img {
   right: 0;
 }
 
-#guest {
+#speakers {
   padding-bottom: 150px;
 }
 
@@ -377,6 +378,10 @@ img {
 @media screen and (max-width: 768px) {
   body.lock {
     overflow: hidden;
+  }
+
+  .cloud {
+    background-size: cover;
   }
 
   .header-container {
