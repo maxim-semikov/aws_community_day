@@ -9,6 +9,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -23,7 +24,6 @@ body {
   color: white;
   background-color: var(--dark-bg-color);
   font-size: 1.6rem;
-  line-height: 2.8rem;
 }
 
 article,
@@ -159,22 +159,8 @@ img {
   background-color: #ee9002;
 }
 
-.registration {
-  margin: 20px;
-  font-size: 3rem;
-  padding: 20px;
-}
-
-.registration__disable {
-  background-color: #f1bd70;
-  cursor: default;
-}
-.registration__disable:hover {
-  background-color: #f1bd70;
-}
-
 .section {
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .section_light {
@@ -182,12 +168,13 @@ img {
   color: #232f3e;
 }
 
-.section-title {
+.section-title,
+.section-subtitle {
   font-size: 3rem;
   text-transform: uppercase;
   padding: 0;
   color: transparent;
-  background-image: linear-gradient(0.253turn, #fbc036 0%, #d88200 100%);
+  background-image: linear-gradient(180turn, #d88200 0%, #fbc036 100%);
   -webkit-background-clip: text;
   will-change: transform;
   line-height: 1.25;
@@ -195,6 +182,10 @@ img {
   border-color: transparent;
   border-style: solid;
   width: fit-content;
+}
+
+.section-subtitle {
+  font-size: 2rem;
 }
 
 .wave {
@@ -206,6 +197,104 @@ img {
   bottom: -1px;
   left: 0;
   right: 0;
+}
+
+.tickets-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+}
+
+.ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-top-width: 20px;
+  width: 250px;
+  position: relative;
+  /* border: 1px solid #e8e8e8; */
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
+  color: #232f3e;
+  min-height: 300px;
+}
+
+.ticket-title-container {
+  width: 100%;
+  min-height: 150px;
+}
+
+.ticket-title {
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.ticket__supper-early-bird .ticket-title {
+  color: #e93e2c;
+}
+
+.ticket__supper-early-bird .ticket-end {
+  background-color: #e93e2c;
+}
+
+.ticket__early-bird .ticket-title {
+  color: var(--primary-color);
+}
+
+.ticket__early-bird .ticket-end {
+  background-color: var(--primary-color);
+}
+
+.ticket-sum {
+  font-size: 4rem;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.ticket-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  height: 36px;
+  margin: 12px 0 24px;
+  background-color: #ced0db;
+  color: white;
+  font-weight: 600;
+}
+
+.ticket-end > p {
+  padding: 0;
+  margin: 0;
+}
+
+.bay-ticket {
+  font-size: 2rem;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #e93e2c;
+}
+
+.bay-ticket:hover {
+  background-color: #fa5342;
+}
+
+.bay-ticket__disabled {
+  background-color: #ced0db;
+  cursor: default;
+}
+.bay-ticket__disabled:hover {
+  background-color: #ced0db;
+}
+
+.ticket-disclosure {
+  text-align: center;
+  margin-top: 60px;
 }
 
 #speakers {
