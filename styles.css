@@ -103,6 +103,15 @@ img {
   color: white;
 }
 
+.navbar li a.menu-bay-tickets {
+  color: #f79808;
+}
+
+.navbar li a.menu-bay-tickets:hover,
+.navbar li a.menu-bay-tickets:active {
+  color: #fbc036;
+}
+
 .logo {
   margin-top: 5px;
 }
