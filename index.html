@@ -1,803 +1,671 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, user-scalable=0"
-		/>
 
-		<title>AWS Community Day Central Asia</title>
-		<meta name="description" content="AWS Community Day Central Asia" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-			crossorigin="anonymous"
-		/>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-			crossorigin="anonymous"
-		></script>
-		<link
-			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Oswald:wght@200&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
 
-	<body id="body">
-		<!-- Google tag (gtag.js) -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-G687GXS2MW"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+	<title>AWS Community Day Central Asia</title>
+	<meta name="description" content="AWS Community Day Central Asia" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+	<link
+		href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Oswald:wght@200&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
 
-			gtag('config', 'G-G687GXS2MW');
-		</script>
+<body id="body">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-G687GXS2MW"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
-		<header id="header" class="header">
-			<div class="container header-container">
-				<a href="/">
-					<img
-						src="./assets/img/logo-651aac4eda3a6.webp"
-						class="logo"
-						alt="AWS Community Day Asia"
-						height="50px"
-					/>
-				</a>
-				<nav class="navbar">
-					<div class="burger-menu">&#9776;</div>
-					<ul id="menu">
-						<li><a href="#speakers">Speakers</a></li>
-						<li><a href="#talks">Talks</a></li>
-						<li><a href="#workshops">Workshops</a></li>
-						<li><a href="#sponsors">Sponsors</a></li>
-						<li><a href="#organizing-team">Organizing Team</a></li>
-						<li><a href="#location">Location</a></li>
-						<li><a href="#tickets" class="menu-bay-tickets">Ticket</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<main>
-			<section id="intro">
-				<div class="cloud"></div>
-				<div class="container info-container">
-					<img
-						src="./assets/img/logo-651aac4eda3a6.webp"
-						alt="AWS Community Day Central Asia"
-						width="500"
-						class="info-logo-img"
-					/>
-					<div class="info-description">
-						<p>
-							<strong>AWS Community Day</strong> - мероприятие, посвященное
-							облачным технологиям Amazon Web Services (AWS), предназначенное
-							для обмена знаний и опытом среди участников AWS-сообщества
-						</p>
-						<p>Алматы</p>
-						<p>17 - 18 ноября, 2023, КБТУ</p>
-						<a href="#tickets" class="btn bay-ticket">Купить билет</a>
-					</div>
-				</div>
-			</section>
+		gtag('config', 'G-G687GXS2MW');
+	</script>
 
-			<section id="speakers" class="section section_light">
-				<div class="container">
-					<h2 class="section-title section-title">Speakers</h2>
-
-					<div class="speaker-container">
-						<div class="speaker">
-							<div class="speaker-img">
-								<img
-									class="avatar"
-									src="./assets/img/a_babenko.webp"
-									alt="Anton Babenko"
-								/>
-							</div>
-							<div class="speaker-info">
-								<a
-									class="speaker-title"
-									href="https://www.linkedin.com/in/antonbabenko/"
-									target="_blank"
-									><span>Anton</span> Babenko</a
-								>
-								<p>AWS Community Hero</p>
-								<p>Terraform influencer</p>
-							</div>
-						</div>
-
-						<div class="speaker">
-							<div class="speaker-img">
-								<img
-									class="avatar"
-									src="./assets/img/v_vedmich.webp"
-									alt="Victor Vedmich"
-								/>
-							</div>
-							<div class="speaker-info">
-								<a
-									class="speaker-title"
-									href="https://www.linkedin.com/in/vedmich/"
-									target="_blank"
-									><span>Victor</span> Vedmich</a
-								>
-								<p>Snr Developer Advocate at AWS</p>
-							</div>
-						</div>
-
-						<div class="speaker">
-							<div class="speaker-img">
-								<img
-									class="avatar"
-									src="./assets/img/a_prima.webp"
-									alt="Artyom Prima "
-								/>
-							</div>
-							<div class="speaker-info">
-								<a
-									class="speaker-title"
-									href="https://www.linkedin.com/in/artyom-prima-9014091a5/"
-									target="_blank"
-									><span>Artyom</span> Prima</a
-								>
-								<p>Developer Advocate, qCloudy</p>
-								<p>DevOps at Aviata</p>
-							</div>
-						</div>
-
-						<div class="speaker">
-							<div class="speaker-img">
-								<img
-									class="avatar"
-									src="./assets/img/maria-encinar-651aac49a9362.webp"
-									alt="Maria Encinar"
-								/>
-							</div>
-							<div class="speaker-info">
-								<a
-									class="speaker-title"
-									href="https://www.linkedin.com/in/mariaencinar"
-									target="_blank"
-									><span>Maria</span> Encinar</a
-								>
-								<p>AWS User Group Global Program Owner at AWS</p>
-							</div>
-						</div>
-
-						<div class="speaker">
-							<div class="speaker-img">
-								<img
-									class="avatar"
-									src="./assets/img/i-sharfmesser-651aac4dd7c2f.webp"
-									alt="Igor Sharfmesser"
-								/>
-							</div>
-							<div class="speaker-info">
-								<a
-									class="speaker-title"
-									href="https://www.linkedin.com/in/igorsharfmesser/"
-									target="_blank"
-									><span>Igor</span> Sharfmesser</a
-								>
-								<p>Senior Solutions Architect at AWS</p>
-							</div>
-						</div>
-
-						<div class="speaker">
-							<div class="speaker-img">
-								<img
-									class="avatar"
-									src="./assets/img/Said_Akhmed_Agitaev.webp"
-									alt="Said Akhmed Agitaev"
-								/>
-							</div>
-							<div class="speaker-info">
-								<a
-									class="speaker-title"
-									href="https://www.linkedin.com/in/agitaev/"
-									target="_blank"
-									><span>Said Akhmed</span> Agitaev</a
-								>
-								<p>AWS Community Leader at AWS UG Tashkent</p>
-							</div>
-						</div>
-
-						<div class="speaker">
-							<div class="speaker-img">
-								<img
-									class="avatar"
-									src="./assets/img/Dazik_Akbarov.webp"
-									alt="Saidazizkhon Akbarov"
-								/>
-							</div>
-							<div class="speaker-info">
-								<a
-									class="speaker-title"
-									href="https://www.linkedin.com/in/saidazizkhon-akbarov/"
-									target="_blank"
-									><span>Saidazizkhon</span> Akbarov</a
-								>
-								<p>AWS Community Leader at AWS UG Tashkent</p>
-							</div>
-						</div>
-
-						<div class="speaker">
-							<div class="speaker-img">
-								<img
-									class="avatar"
-									src="./assets/img/s_kirgizov.webp"
-									alt="Sergey Kirgizov"
-								/>
-							</div>
-							<div class="speaker-info">
-								<a
-									class="speaker-title"
-									href="https://www.linkedin.com/in/cepxuo"
-									target="_blank"
-									><span>Sergey</span> Kirgizov</a
-								>
-								<p>AWS Community Leader at AWS UG Tashkent</p>
-							</div>
-						</div>
-					</div>
-					<div class="flex-wrap-container mt-50">
-						<a
-							href="https://forms.gle/xgRFSzegWwH7cUb86"
-							class="btn"
-							target="_blank"
-							>Хочу стать спикером</a
-						>
-					</div>
-				</div>
-			</section>
-
-			<div>
-				<div style="position: relative">
-					<div class="wave"></div>
-				</div>
-			</div>
-
-			<section id="agenda" class="container row justify-content-between">
-				<div class="col-xs-10 col-sm-8 col-md-6" id="talks">
-					<h2 class="section-title section-title">TALKS</h2>
-					<ul class="timeline timeline-centered">
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />9:00 - 10:00</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">Регистрация</h3>
-							</div>
-						</li>
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />10:00 - 10:10</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">Приветственное слово</h3>
-								<p class="timeline-author">Maria Encinar</p>
-								<p class="timeline-position">AWS User Group Global Lead</p>
-							</div>
-						</li>
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />10:10 - 10:50</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">TBA</h3>
-								<p class="timeline-author">Burak Ince</p>
-								<p class="timeline-position">
-									Cloud Business Development Manager at TrendMicro
-								</p>
-							</div>
-						</li>
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />10:50 - 11:30</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">
-									Как пройти PCI DSS в AWS за три недели
-								</h3>
-								<p class="timeline-author">Artyom Prima</p>
-								<p class="timeline-position">Developer Advocate at qCloudy</p>
-							</div>
-						</li>
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />11:30 - 12:10</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">Terraform Best Practices</h3>
-								<p class="timeline-author">Anton Babenko</p>
-								<p class="timeline-position">AWS Community Hero</p>
-							</div>
-						</li>
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />12:10 - 13:30</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">Обеденный перерыв</h3>
-							</div>
-						</li>
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />13:30 - 14:10</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">TBA</h3>
-								<p class="timeline-author">Said Akhmed Agitaev</p>
-								<p class="timeline-position">
-									Community Leader at AWS UG Tashkent
-								</p>
-							</div>
-						</li>
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />14:10 - 14:50</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">TBA</h3>
-								<p class="timeline-author">TBA</p>
-								<p class="timeline-position"></p>
-							</div>
-						</li>
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />14:50 - 15:30</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">TBA</h3>
-								<p class="timeline-author">Viktor Vedmich</p>
-								<p class="timeline-position">
-									Senior Developer Advocate at AWS
-								</p>
-							</div>
-						</li>
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />15:30 - 16:00</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">Coffee Break</h3>
-							</div>
-						</li>
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />16:00 - 16:40</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">TBA</h3>
-								<p class="timeline-author">TBA</p>
-								<p class="timeline-position"></p>
-							</div>
-						</li>
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />16:40 - 17:40</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">Panel Discussion</h3>
-								<p class="timeline-author">Anton Babenko</p>
-								<p class="timeline-author">Viktor Vedmich</p>
-								<p class="timeline-author">Nurbek Sadykov</p>
-							</div>
-						</li>
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />17:50 - 18:00</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">Закрытие</h3>
-								<p class="timeline-author"></p>
-								<p class="timeline-position"></p>
-							</div>
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-xs-10 col-sm-8 col-md-5" id="workshops">
-					<h2 class="section-title section-title">WORKSHOPS</h2>
-					<ul class="timeline timeline-centered">
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />12:00 - 14:00</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">Amazon Bedrock Workshop</h3>
-								<p class="timeline-author">Igor Sharfmesser</p>
-								<p class="timeline-position">
-									Senior Solutions Architect at AWS
-								</p>
-							</div>
-						</li>
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />14:00 - 16:00</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">Terraform Best Practices (Q&A)</h3>
-								<p class="timeline-author">Anton Babenko</p>
-								<p class="timeline-position">AWS Community Hero</p>
-							</div>
-						</li>
-						<li class="timeline-item">
-							<div class="timeline-info">
-								<span>Ноябрь 17<br />16:00 - 17:50</span>
-							</div>
-							<div class="timeline-marker"></div>
-							<div class="timeline-content">
-								<h3 class="timeline-title">
-									Build A Gaming App with AWS Amplify & AWS AppSync
-								</h3>
-								<p class="timeline-author">Said Akhmed Agitaev</p>
-								<p class="timeline-author">Dazik Akbarov</p>
-								<p class="timeline-author">Sergey Kirgizov</p>
-								<p class="timeline-position">AWS UG Tashkent Leaders</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-			<section id="sponsors" class="section">
-				<div class="container">
-					<h2 class="section-title">Sponsors</h2>
-
-					<h3 class="section-subtitle">Diamond</h3>
-					<div class="flex-wrap-container">
-						<a href="https://www.trendmicro.com/" target="_blank">
-							<img src="./assets/img/tremd_micro_logo.svg" height="70px" />
-						</a>
-					</div>
-
-					<h3 class="section-subtitle">Gold</h3>
-					<div class="flex-wrap-container">
-						<a href="https://qcloudy.io/" target="_blank">
-							<img src="./assets/img/qCloudy.png" height="70px" />
-						</a>
-					</div>
-
-					<div class="call-for-sponsors mt-50">
-						<p>
-							Мы открыты к сотрудничеству и ценим поддержку. Если у вас есть
-							ресурсы — это отличная инвестиция. Внесите свой вклад в AWS
-							Community и развитие локальной IT-индустрии.
-						</p>
-
-						<a
-							href="https://forms.gle/QbVHrLLCA8VjU7NK7"
-							class="btn"
-							target="_blank"
-							>Cтать спонсором</a
-						>
-					</div>
-
-					<h2 class="section-title mt-100">supported by</h2>
-					<div class="flex-wrap-container">
-						<a href="https://aws.amazon.com/" target="_blank">
-							<img src="./assets/img/aws_logo.png" height="120px" />
-						</a>
-
-						<a href="https://kbtu.edu.kz/" target="_blank">
-							<img src="./assets/img/kbtu_logo.svg" height="80px" />
-						</a>
-					</div>
-
-					<h2 class="section-title mt-100">Media partners</h2>
-					<div class="flex-wrap-container">
-						<a href="https://t.me/cloudnativekz" target="_blank">
-							<img src="./assets/img/qC_ct.png" height="160px" />
-						</a>
-						<a href="https://rs.school/" target="_blank">
-							<img src="./assets/img/rs.png" height="70px" />
-						</a>
-					</div>
-				</div>
-			</section>
-
-			<section id="organizing-team" class="section">
-				<div class="container">
-					<h2 class="section-title">organizing team</h2>
-
-					<div class="members-container">
-						<div class="member">
-							<div class="member-img">
-								<img
-									class="avatar"
-									src="./assets/img/n_sadykov.webp"
-									alt="Нурбек Садыков"
-								/>
-							</div>
-							<div class="member-info">
-								<a
-									class="member-title"
-									href="https://www.linkedin.com/in/nurbeksadykov/"
-									target="_blank"
-									>Нурбек Садыков</a
-								>
-								<p>CEO qCloudy,</p>
-								<p>AWS Community Leader at AWS UG Kazakhstan</p>
-							</div>
-						</div>
-
-						<div class="member">
-							<div class="member-img">
-								<img
-									class="avatar"
-									src="./assets/img/m_semikov.webp"
-									alt="Максим Семиков"
-								/>
-							</div>
-							<div class="member-info">
-								<a
-									class="member-title"
-									href="https://www.linkedin.com/in/maxim-semikov-12a371109"
-									target="_blank"
-									>Максим Семиков</a
-								>
-								<p>Software Engineer at EPAM,</p>
-								<p>AWS Community Leader at AWS UG Kazakhstan</p>
-							</div>
-						</div>
-
-						<div class="member">
-							<div class="member-img">
-								<img
-									class="avatar"
-									src="./assets/img/f_bakiyev.webp"
-									alt="Фарух Бакиев"
-								/>
-							</div>
-							<div class="member-info">
-								<a
-									class="member-title"
-									href="https://www.linkedin.com/in/fbakiyev/"
-									target="_blank"
-									>Фарух Бакиев</a
-								>
-								<p>Team lead DevOps (Big Data) Tele2 Kazakhstan</p>
-							</div>
-						</div>
-
-						<div class="member">
-							<div class="member-img">
-								<img
-									class="avatar"
-									src="./assets/img/a_prima.webp"
-									alt="Артем Прима"
-								/>
-							</div>
-							<div class="member-info">
-								<a
-									class="member-title"
-									href="https://www.linkedin.com/in/artyom-prima-9014091a5/"
-									target="_blank"
-									>Артем Прима</a
-								>
-								<p>Developer Advocate, qCloudy</p>
-								<p>DevOps at Aviata</p>
-							</div>
-						</div>
-
-						<div class="member">
-							<div class="member-img">
-								<img
-									class="avatar"
-									src="./assets/img/Said_Akhmed_Agitaev.webp"
-									alt="Саид Ахмед Агитаев"
-								/>
-							</div>
-							<div class="member-info">
-								<a
-									class="member-title"
-									href="https://www.linkedin.com/in/agitaev/"
-									target="_blank"
-									>Саид Ахмед Агитаев</a
-								>
-								<p>Senior Software Engineer at EPAM,</p>
-								<p>AWS Community Leader at AWS UG Tashkent</p>
-							</div>
-						</div>
-
-						<div class="member">
-							<div class="member-img">
-								<img
-									class="avatar"
-									src="./assets/img/Dazik_Akbarov.webp"
-									alt="Дазик Акбаров"
-								/>
-							</div>
-							<div class="member-info">
-								<a
-									class="member-title"
-									href="https://www.linkedin.com/in/saidazizkhon-akbarov/"
-									target="_blank"
-									>Дазик Акбаров</a
-								>
-								<p>Senior Software Engineer at EPAM,</p>
-								<p>AWS Community Leader at AWS UG Tashkent</p>
-							</div>
-						</div>
-
-						<div class="member">
-							<div class="member-img">
-								<img
-									class="avatar"
-									src="./assets/img/s_kirgizov.webp"
-									alt="Сергей Киргизов"
-								/>
-							</div>
-							<div class="member-info">
-								<a
-									class="member-title"
-									href="https://www.linkedin.com/in/cepxuo"
-									target="_blank"
-									>Сергей Киргизов</a
-								>
-								<p>Lead Systems Engineer at EPAM,</p>
-								<p>AWS Community Leader at AWS UG Tashkent</p>
-							</div>
-						</div>
-
-						<div class="member">
-							<div class="member-img">
-								<img
-									class="avatar"
-									src="./assets/img/b_kemelov.webp"
-									alt="Кемелов Бекназар"
-								/>
-							</div>
-							<div class="member-info">
-								<a
-									class="member-title"
-									href="https://www.linkedin.com/in/beknazar-kemelov/"
-									target="_blank"
-									>Кемелов Бекназар</a
-								>
-								<p>Senior Software Engineer at EPAM,</p>
-								<p>AWS Community Leader at AWS UG Bishkek,</p>
-								<p>Leader at FrontSpot Asia</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="tickets" class="section section_light">
-				<div class="container">
-					<h2 class="section-title section-title">Успей купить билет</h2>
-					<div class="tickets-container">
-						<div class="ticket ticket__supper-early-bird">
-							<div class="ticket-title-container">
-								<h3 class="ticket-title">SUPER<br />EARLY BIRD</h3>
-							</div>
-
-							<p class="ticket-sum">3 000 ₸</p>
-							<div class="ticket-end">
-								<p>до 15 октября</p>
-							</div>
-
-							<a
-								href="https://sxodim.com/almaty/education/konferenciya-aws-community-day/tickets"
-								target="_blank"
-								class="btn bay-ticket"
-								>Купить</a
-							>
-						</div>
-
-						<div class="ticket ticket__early-bird">
-							<div class="ticket-title-container">
-								<h3 class="ticket-title">
-									EARLY <br />
-									BIRD
-								</h3>
-							</div>
-
-							<p class="ticket-sum">7 000 ₸</p>
-							<div class="ticket-end">
-								<p>до 31 октября</p>
-							</div>
-
-							<div class="btn bay-ticket bay-ticket__disabled">Купить</div>
-						</div>
-
-						<div class="ticket">
-							<div class="ticket-title-container">
-								<h3 class="ticket-title">STANDARD</h3>
-							</div>
-
-							<p class="ticket-sum">10 000 ₸</p>
-							<div class="ticket-end"></div>
-
-							<div class="btn bay-ticket bay-ticket__disabled">Купить</div>
-						</div>
-					</div>
-					<p class="ticket-disclosure">
-						Продажа билетов на конференцию помогает нам покрыть небольшую часть
-						расходов на организацию мероприятия и обеспечить вам незабываемые
-						впечатления от этого мероприятия.
+	<header id="header" class="header">
+		<div class="container header-container">
+			<a href="/">
+				<img src="./assets/img/logo-651aac4eda3a6.webp" class="logo" alt="AWS Community Day Asia"
+					height="50px" />
+			</a>
+			<nav class="navbar">
+				<div class="burger-menu">&#9776;</div>
+				<ul id="menu">
+					<li><a href="#speakers">Speakers</a></li>
+					<li><a href="#talks">Talks</a></li>
+					<li><a href="#workshops">Workshops</a></li>
+					<li><a href="#sponsors">Sponsors</a></li>
+					<li><a href="#organizing-team">Organizing Team</a></li>
+					<li><a href="#location">Location</a></li>
+					<li><a href="#tickets" class="menu-bay-tickets">Ticket</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section id="intro">
+			<div class="cloud"></div>
+			<div class="container info-container">
+				<img src="./assets/img/logo-651aac4eda3a6.webp" alt="AWS Community Day Central Asia" width="500"
+					class="info-logo-img" />
+				<div class="info-description">
+					<p>
+						<strong>AWS Community Day</strong> - мероприятие, посвященное
+						облачным технологиям Amazon Web Services (AWS), предназначенное
+						для обмена знаний и опытом среди участников AWS-сообщества
 					</p>
+					<p>Алматы</p>
+					<p>17 - 18 ноября, 2023, КБТУ</p>
+					<a href="#tickets" class="button bay-ticket">Купить билет</a>
 				</div>
-			</section>
-
-			<section id="location" class="section">
-				<div class="container">
-					<h2 class="section-title">Location</h2>
-				</div>
-				<div class="location-container">
-					<script
-						type="text/javascript"
-						charset="utf-8"
-						async
-						src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6704db3568a33140e315f34d1fd570c3c58e9fe4c4edeb7d588bc879b326956c&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"
-					></script>
-				</div>
-			</section>
-
-			<div class="container copyrigth">
-				<p>&copy; 2023 AWS Community Day Central Asia</p>
 			</div>
-		</main>
+		</section>
 
-		<!-- <script src="https://kit.fontawesome.com/c166d5c9da.js" crossorigin="anonymous"></script> -->
-		<noscript style="color: #c00; font-size: 16px; font-weight: bold"
-			>Включите JavaScript в настройках вашего браузера.</noscript
-		>
-		<script>
-			const header = document.getElementById('header');
-			const menu = document.getElementById('menu');
+		<section id="speakers" class="section section_light">
+			<div class="container">
+				<h2 class="section-title">Speakers</h2>
 
-			const handleToggleMenu = () => {
-				menu.classList.toggle('active');
-				document.body.classList.toggle('lock');
-			};
+				<div class="speaker-container">
+					<div class="speaker">
+						<div class="speaker-img">
+							<img class="avatar" src="./assets/img/a_babenko.webp" alt="Anton Babenko" />
+						</div>
+						<div class="speaker-info">
+							<a class="speaker-title" href="https://www.linkedin.com/in/antonbabenko/"
+								target="_blank"><span>Anton</span> Babenko</a>
+							<p>AWS Community Hero</p>
+							<p>Terraform influencer</p>
+						</div>
+					</div>
 
-			document
-				.querySelector('.burger-menu')
-				.addEventListener('click', handleToggleMenu);
-			menu.addEventListener('click', handleToggleMenu);
+					<div class="speaker">
+						<div class="speaker-img">
+							<img class="avatar" src="./assets/img/v_vedmich.webp" alt="Victor Vedmich" />
+						</div>
+						<div class="speaker-info">
+							<a class="speaker-title" href="https://www.linkedin.com/in/vedmich/"
+								target="_blank"><span>Victor</span> Vedmich</a>
+							<p>Snr Developer Advocate at AWS</p>
+						</div>
+					</div>
 
-			const handleScroll = () => {
-				if (window.pageYOffset > 150) {
-					header.classList.add('header-scrolled');
-				} else {
-					header.classList.remove('header-scrolled');
-				}
-			};
+					<div class="speaker">
+						<div class="speaker-img">
+							<img class="avatar" src="./assets/img/a_prima.webp" alt="Artyom Prima " />
+						</div>
+						<div class="speaker-info">
+							<a class="speaker-title" href="https://www.linkedin.com/in/artyom-prima-9014091a5/"
+								target="_blank"><span>Artyom</span> Prima</a>
+							<p>Developer Advocate, qCloudy</p>
+							<p>DevOps at Aviata</p>
+						</div>
+					</div>
 
-			document.addEventListener('DOMContentLoaded', handleScroll);
-			window.addEventListener('scroll', handleScroll);
-		</script>
-	</body>
+					<div class="speaker">
+						<div class="speaker-img">
+							<img class="avatar" src="./assets/img/maria-encinar-651aac49a9362.webp"
+								alt="Maria Encinar" />
+						</div>
+						<div class="speaker-info">
+							<a class="speaker-title" href="https://www.linkedin.com/in/mariaencinar"
+								target="_blank"><span>Maria</span> Encinar</a>
+							<p>AWS User Group Global Program Owner at AWS</p>
+						</div>
+					</div>
+
+					<div class="speaker">
+						<div class="speaker-img">
+							<img class="avatar" src="./assets/img/i-sharfmesser-651aac4dd7c2f.webp"
+								alt="Igor Sharfmesser" />
+						</div>
+						<div class="speaker-info">
+							<a class="speaker-title" href="https://www.linkedin.com/in/igorsharfmesser/"
+								target="_blank"><span>Igor</span> Sharfmesser</a>
+							<p>Senior Solutions Architect at AWS</p>
+						</div>
+					</div>
+
+					<div class="speaker">
+						<div class="speaker-img">
+							<img class="avatar" src="./assets/img/Said_Akhmed_Agitaev.webp" alt="Said Akhmed Agitaev" />
+						</div>
+						<div class="speaker-info">
+							<a class="speaker-title" href="https://www.linkedin.com/in/agitaev/"
+								target="_blank"><span>Said Akhmed</span> Agitaev</a>
+							<p>AWS Community Leader at AWS UG Tashkent</p>
+						</div>
+					</div>
+
+					<div class="speaker">
+						<div class="speaker-img">
+							<img class="avatar" src="./assets/img/Dazik_Akbarov.webp" alt="Saidazizkhon Akbarov" />
+						</div>
+						<div class="speaker-info">
+							<a class="speaker-title" href="https://www.linkedin.com/in/saidazizkhon-akbarov/"
+								target="_blank"><span>Saidazizkhon</span> Akbarov</a>
+							<p>AWS Community Leader at AWS UG Tashkent</p>
+						</div>
+					</div>
+
+					<div class="speaker">
+						<div class="speaker-img">
+							<img class="avatar" src="./assets/img/s_kirgizov.webp" alt="Sergey Kirgizov" />
+						</div>
+						<div class="speaker-info">
+							<a class="speaker-title" href="https://www.linkedin.com/in/cepxuo"
+								target="_blank"><span>Sergey</span> Kirgizov</a>
+							<p>AWS Community Leader at AWS UG Tashkent</p>
+						</div>
+					</div>
+				</div>
+				<div class="flex-wrap-container mt-50">
+					<a href="https://forms.gle/xgRFSzegWwH7cUb86" class="button" target="_blank">Хочу стать спикером</a>
+				</div>
+			</div>
+		</section>
+
+		<div>
+			<div style="position: relative">
+				<div class="wave"></div>
+			</div>
+		</div>
+
+		<section id="agenda" class="container row justify-content-between">
+			<div class="col-xs-10 col-sm-8 col-md-6" id="talks">
+				<h2 class="section-title">TALKS</h2>
+				<ul class="timeline timeline-centered">
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />9:00 - 10:00</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Регистрация</h3>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />10:00 - 10:10</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Приветственное слово</h3>
+							<p class="timeline-author">Maria Encinar</p>
+							<p class="timeline-position">AWS User Group Global Lead</p>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />10:10 - 10:50</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">TBA</h3>
+							<p class="timeline-author">Burak Ince</p>
+							<p class="timeline-position">
+								Cloud Business Development Manager at TrendMicro
+							</p>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />10:50 - 11:30</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">
+								Как пройти PCI DSS в AWS за три недели
+							</h3>
+							<p class="timeline-author">Artyom Prima</p>
+							<p class="timeline-position">Developer Advocate at qCloudy</p>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />11:30 - 12:10</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Terraform Best Practices</h3>
+							<p class="timeline-author">Anton Babenko</p>
+							<p class="timeline-position">AWS Community Hero</p>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />12:10 - 13:30</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Обеденный перерыв</h3>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />13:30 - 14:10</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">TBA</h3>
+							<p class="timeline-author">Said Akhmed Agitaev</p>
+							<p class="timeline-position">
+								Community Leader at AWS UG Tashkent
+							</p>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />14:10 - 14:50</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">TBA</h3>
+							<p class="timeline-author">TBA</p>
+							<p class="timeline-position"></p>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />14:50 - 15:30</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">TBA</h3>
+							<p class="timeline-author">Viktor Vedmich</p>
+							<p class="timeline-position">
+								Senior Developer Advocate at AWS
+							</p>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />15:30 - 16:00</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Coffee Break</h3>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />16:00 - 16:40</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">TBA</h3>
+							<p class="timeline-author">TBA</p>
+							<p class="timeline-position"></p>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />16:40 - 17:40</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Panel Discussion</h3>
+							<p class="timeline-author">Anton Babenko</p>
+							<p class="timeline-author">Viktor Vedmich</p>
+							<p class="timeline-author">Nurbek Sadykov</p>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />17:50 - 18:00</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Закрытие</h3>
+							<p class="timeline-author"></p>
+							<p class="timeline-position"></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-xs-10 col-sm-8 col-md-5" id="workshops">
+				<h2 class="section-title">WORKSHOPS</h2>
+				<ul class="timeline timeline-centered">
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />12:00 - 14:00</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Amazon Bedrock Workshop</h3>
+							<p class="timeline-author">Igor Sharfmesser</p>
+							<p class="timeline-position">
+								Senior Solutions Architect at AWS
+							</p>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />14:00 - 16:00</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Terraform Best Practices (Q&A)</h3>
+							<p class="timeline-author">Anton Babenko</p>
+							<p class="timeline-position">AWS Community Hero</p>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Ноябрь 17<br />16:00 - 17:50</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">
+								Build A Gaming App with AWS Amplify & AWS AppSync
+							</h3>
+							<p class="timeline-author">Said Akhmed Agitaev</p>
+							<p class="timeline-author">Dazik Akbarov</p>
+							<p class="timeline-author">Sergey Kirgizov</p>
+							<p class="timeline-position">AWS UG Tashkent Leaders</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="sponsors" class="section">
+			<div class="container">
+				<h2 class="section-title">Sponsors</h2>
+
+				<h3 class="section-subtitle">Diamond</h3>
+				<div class="flex-wrap-container">
+					<a href="https://www.trendmicro.com/ru_ru/business.html" target="_blank">
+						<img src="./assets/img/tremd_micro_logo.svg" height="70px" />
+					</a>
+				</div>
+
+				<h3 class="section-subtitle">Gold</h3>
+				<div class="flex-wrap-container">
+					<a href="https://qcloudy.io/" target="_blank">
+						<img src="./assets/img/qCloudy.png" height="70px" />
+					</a>
+					<a href="https://kmf.kz/" target="_blank">
+						<img src="./assets/img/KMF_Logo_horiz_colour.svg" height="80px" />
+					</a>
+
+				</div>
+
+				<h3 class="section-subtitle">Digital</h3>
+				<div class="flex-wrap-container">
+					<a href="https://www.redmadrobot.kz/" target="_blank">
+						<img src="./assets/img/rmr_ca_short_redwhite.svg" height="110px" />
+					</a>
+				</div>
+
+				<div class="call-for-sponsors mt-50">
+					<p>
+						Мы открыты к сотрудничеству и ценим поддержку. Если у вас есть
+						ресурсы — это отличная инвестиция. Внесите свой вклад в AWS
+						Community и развитие локальной IT-индустрии.
+					</p>
+
+					<a href="https://forms.gle/QbVHrLLCA8VjU7NK7" class="button" target="_blank">Cтать спонсором</a>
+				</div>
+
+				<h2 class="section-title mt-100">supported by</h2>
+				<div class="flex-wrap-container">
+					<a href="https://aws.amazon.com/" target="_blank">
+						<img src="./assets/img/aws_logo.png" height="120px" />
+					</a>
+
+					<a href="https://kbtu.edu.kz/" target="_blank">
+						<img src="./assets/img/kbtu_logo.svg" height="80px" />
+					</a>
+				</div>
+
+				<h2 class="section-title mt-100">Media partners</h2>
+				<div class="flex-wrap-container">
+					<a href="https://t.me/cloudnativekz" target="_blank">
+						<img src="./assets/img/media/qC_ct.png" height="160px" />
+					</a>
+					<a href="https://rs.school/" target="_blank">
+						<img src="./assets/img/media/rs.png" height="70px" />
+					</a>
+
+					<img src="./assets/img/media/city24_white.png" height="70px" />
+
+					<img src="./assets/img/media/BlueScreen_white.png" height="70px" />
+
+					<img src="./assets/img/media/DataBoom.png" height="70px" />
+
+					<img src="./assets/img/media/qazdev_logo_white.svg" height="60px" />
+
+					<a href="https://terricon.kz/ru" target="_blank">
+						<img src="./assets/img/media/Terricon_Valley_white.png" height="60px" />
+					</a>
+
+					<img src="./assets/img/media/the_Tech_white.png" height="40px" />
+
+
+					<img src="./assets/img/media/techzimiz.png" height="70px" />
+
+					<a href="https://er10.kz/" target="_blank">
+						<img src="./assets/img/media/er10.svg" height="60px" />
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="organizing-team" class="section">
+			<div class="container">
+				<h2 class="section-title">organizing team</h2>
+
+				<div class="members-container">
+					<div class="member">
+						<div class="member-img">
+							<img class="avatar" src="./assets/img/n_sadykov.webp" alt="Нурбек Садыков" />
+						</div>
+						<div class="member-info">
+							<a class="member-title" href="https://www.linkedin.com/in/nurbeksadykov/"
+								target="_blank">Нурбек Садыков</a>
+							<p>CEO qCloudy,</p>
+							<p>AWS Community Leader at AWS UG Kazakhstan</p>
+						</div>
+					</div>
+
+					<div class="member">
+						<div class="member-img">
+							<img class="avatar" src="./assets/img/m_semikov.webp" alt="Максим Семиков" />
+						</div>
+						<div class="member-info">
+							<a class="member-title" href="https://www.linkedin.com/in/maxim-semikov-12a371109"
+								target="_blank">Максим Семиков</a>
+							<p>Software Engineer at EPAM,</p>
+							<p>AWS Community Leader at AWS UG Kazakhstan</p>
+						</div>
+					</div>
+
+					<div class="member">
+						<div class="member-img">
+							<img class="avatar" src="./assets/img/f_bakiyev.webp" alt="Фарух Бакиев" />
+						</div>
+						<div class="member-info">
+							<a class="member-title" href="https://www.linkedin.com/in/fbakiyev/" target="_blank">Фарух
+								Бакиев</a>
+							<p>Team lead DevOps (Big Data) Tele2 Kazakhstan</p>
+						</div>
+					</div>
+
+					<div class="member">
+						<div class="member-img">
+							<img class="avatar" src="./assets/img/a_prima.webp" alt="Артем Прима" />
+						</div>
+						<div class="member-info">
+							<a class="member-title" href="https://www.linkedin.com/in/artyom-prima-9014091a5/"
+								target="_blank">Артем Прима</a>
+							<p>Developer Advocate, qCloudy</p>
+							<p>DevOps at Aviata</p>
+						</div>
+					</div>
+
+					<div class="member">
+						<div class="member-img">
+							<img class="avatar" src="./assets/img/Said_Akhmed_Agitaev.webp" alt="Саид Ахмед Агитаев" />
+						</div>
+						<div class="member-info">
+							<a class="member-title" href="https://www.linkedin.com/in/agitaev/" target="_blank">Саид
+								Ахмед Агитаев</a>
+							<p>Senior Software Engineer at EPAM,</p>
+							<p>AWS Community Leader at AWS UG Tashkent</p>
+						</div>
+					</div>
+
+					<div class="member">
+						<div class="member-img">
+							<img class="avatar" src="./assets/img/Dazik_Akbarov.webp" alt="Дазик Акбаров" />
+						</div>
+						<div class="member-info">
+							<a class="member-title" href="https://www.linkedin.com/in/saidazizkhon-akbarov/"
+								target="_blank">Дазик Акбаров</a>
+							<p>Senior Software Engineer at EPAM,</p>
+							<p>AWS Community Leader at AWS UG Tashkent</p>
+						</div>
+					</div>
+
+					<div class="member">
+						<div class="member-img">
+							<img class="avatar" src="./assets/img/s_kirgizov.webp" alt="Сергей Киргизов" />
+						</div>
+						<div class="member-info">
+							<a class="member-title" href="https://www.linkedin.com/in/cepxuo" target="_blank">Сергей
+								Киргизов</a>
+							<p>Lead Systems Engineer at EPAM,</p>
+							<p>AWS Community Leader at AWS UG Tashkent</p>
+						</div>
+					</div>
+
+					<div class="member">
+						<div class="member-img">
+							<img class="avatar" src="./assets/img/b_kemelov.webp" alt="Кемелов Бекназар" />
+						</div>
+						<div class="member-info">
+							<a class="member-title" href="https://www.linkedin.com/in/beknazar-kemelov/"
+								target="_blank">Кемелов Бекназар</a>
+							<p>Senior Software Engineer at EPAM,</p>
+							<p>AWS Community Leader at AWS UG Bishkek,</p>
+							<p>Leader at FrontSpot Asia</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="tickets" class="section section_light">
+			<div class="container">
+				<h2 class="section-title section-title">Успей купить билет</h2>
+				<div class="tickets-container">
+					<div class="ticket ticket__supper-early-bird">
+						<div class="ticket-title-container">
+							<h3 class="ticket-title">SUPER<br />EARLY BIRD</h3>
+						</div>
+
+						<p class="ticket-sum">3 000 ₸</p>
+						<div class="ticket-end">
+							<p>до 15 октября</p>
+						</div>
+
+						<a href="https://sxodim.com/almaty/education/konferenciya-aws-community-day/tickets"
+							target="_blank" class="button bay-ticket">Купить</a>
+					</div>
+
+					<div class="ticket ticket__early-bird">
+						<div class="ticket-title-container">
+							<h3 class="ticket-title">
+								EARLY <br />
+								BIRD
+							</h3>
+						</div>
+
+						<p class="ticket-sum">7 000 ₸</p>
+						<div class="ticket-end">
+							<p>до 31 октября</p>
+						</div>
+
+						<div class="button bay-ticket bay-ticket__disabled">Купить</div>
+					</div>
+
+					<div class="ticket">
+						<div class="ticket-title-container">
+							<h3 class="ticket-title">STANDARD</h3>
+						</div>
+
+						<p class="ticket-sum">10 000 ₸</p>
+						<div class="ticket-end"></div>
+
+						<div class="button bay-ticket bay-ticket__disabled">Купить</div>
+					</div>
+				</div>
+				<p class="ticket-disclosure">
+					Продажа билетов на конференцию помогает нам покрыть небольшую часть
+					расходов на организацию мероприятия и обеспечить вам незабываемые
+					впечатления от этого мероприятия.
+				</p>
+			</div>
+		</section>
+
+		<section id="location" class="section">
+			<div class="container">
+				<h2 class="section-title">Location</h2>
+			</div>
+			<div class="location-container">
+				<script type="text/javascript" charset="utf-8" async
+					src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6704db3568a33140e315f34d1fd570c3c58e9fe4c4edeb7d588bc879b326956c&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
+		</section>
+
+		<div class="container copyrigth">
+			<p>&copy; 2023 AWS Community Day Central Asia</p>
+		</div>
+	</main>
+
+	<!-- <script src="https://kit.fontawesome.com/c166d5c9da.js" crossorigin="anonymous"></script> -->
+	<noscript style="color: #c00; font-size: 16px; font-weight: bold">Включите JavaScript в настройках вашего
+		браузера.</noscript>
+	<script>
+		const header = document.getElementById('header');
+		const menu = document.getElementById('menu');
+
+		const handleToggleMenu = () => {
+			menu.classList.toggle('active');
+			document.body.classList.toggle('lock');
+		};
+
+		document
+			.querySelector('.burger-menu')
+			.addEventListener('click', handleToggleMenu);
+		menu.addEventListener('click', handleToggleMenu);
+
+		const handleScroll = () => {
+			if (window.pageYOffset > 150) {
+				header.classList.add('header-scrolled');
+			} else {
+				header.classList.remove('header-scrolled');
+			}
+		};
+
+		document.addEventListener('DOMContentLoaded', handleScroll);
+		window.addEventListener('scroll', handleScroll);
+	</script>
+</body>
+
 </html>
