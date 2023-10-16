@@ -461,6 +461,25 @@ a:hover {
   color: #232f3e;
 }
 
+.FAQ-accordion-item {
+  padding-bottom: 30px;
+}
+
+.FAQ-accordion-header {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.FAQ-accordion-header:hover {
+  cursor: pointer;
+}
+
+.FAQ-accordion-body {
+  padding-left: 20px;
+}
+
 #organizing-team {
   background-image: url("./assets/img/grid.png");
   background-repeat: no-repeat;
