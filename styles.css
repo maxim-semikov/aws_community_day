@@ -470,10 +470,25 @@ a:hover {
   font-weight: 600;
   margin-bottom: 20px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .FAQ-accordion-header:hover {
   cursor: pointer;
+  color: #f6b34f;
+}
+
+.FAQ-accordion-header::before {
+  content: "+";
+  flex-shrink: 0;
+  margin-right: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.FAQ-accordion-header:not(.collapsed)::before {
+  content: "-";
+  transform: rotate(-180deg);
 }
 
 .FAQ-accordion-body {
