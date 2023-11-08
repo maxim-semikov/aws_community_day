@@ -923,6 +923,22 @@ a:hover {
   color: #ddd;
 }
 
+.contact-link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #232f3e;
+  margin-bottom: 12px;
+}
+
+.contact-link__red:hover {
+  color: #e93e2c;
+}
+
+.contact-link__blue:hover {
+  color: #0a66c2;
+}
+
 @media (min-width: 768px) {
   .timeline.timeline-authoreline,
   .timeline-centered .timeline {
